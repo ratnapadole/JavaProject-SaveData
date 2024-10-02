@@ -1,0 +1,67 @@
+
+<html>
+<head>
+    <title>JavaProject</title> 
+	<style> .headstyle{font-size:20; text-align: center;}
+			.fstyle{ font-weight : bold;  border :2px solid red;text-align: center;width:500; background-color:orange;}
+	</style>
+	
+	<script>
+		function submitButton(){
+		//	alert("Employee Registrstion is successfully");
+		}
+		
+		function resetButton(){
+			document.elementById("ename")=  "";
+			document.elementById("eaddress")=  "";
+			document.elementById("edob")=  "";
+			document.elementById("egender")=  "";
+			document.elementById("eloginid")=  "";
+			document.elementById("epassword")=  "";
+			//alert("reset value");
+		}
+	</script>
+   
+</head>
+<body>
+    <center> <h1>Online Java Project </h1></center>
+	
+	 <div class="headstyle">
+		<h1>Employee Registration Form</h1><br>
+		
+				
+		<form  action="emp.jsp" method="post" >
+			<center> 
+				<div class="fstyle">
+					EMP Name: <br>
+					<input type="text"  id="ename" name="ename" required autofocus placeholder="enter emp name"><br>
+					EMP Address: <br>
+					<input type="text" name="eaddress" required autofocus placeholder="enter emp address"><br>
+					
+					EMP DOB: <br>
+					<input type="date" name="edob" required autofocus ><br>
+					
+					EMP Gender: <br>
+					<input type="radio" name="egender" value="male" required autofocus >Male
+					<input type="radio" name="egender" value="female" required autofocus >Female
+					<input type="radio" name="egender" value="others" required autofocus >Others<br>
+					
+					EMP LoginId: <br>
+					<input type="text" name="eloginid" required autofocus placeholder="enter emp loginId"><br>
+					EMP Password: <br>
+					<input type="password" name="epassword" required autofocus placeholder="enter password"><br><br>
+					
+					<input type="submit" onclick="submitButton();" > &nbsp; &nbsp; 
+					<input type="reset"  onclick="resetButton();" ><br>
+				</div>
+		  </center> 
+		</form>
+	 </div>
+	
+	
+   </body>
+</html>
+
+
+
+
